@@ -426,3 +426,18 @@ function MPCategories($val = false)
 
     return $arr;
 }
+
+function alertMaxSize(){
+    return '
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert" role="alert">
+                  <hr>
+                  <strong>Batas upload file 20 MB</strong><br>
+                  <small>  
+                    <span class="text-danger">*</span>jika ada file atau jumlah size file yang lebih dari 20 MB silahkan save berkala dengan klik tombol <strong class="text-success">Save to Draft</strong> (di tab Summary) lalu upload kembali file yang lainnya. 
+                  </small> 
+                </div>
+            </div>
+        </div>';
+}

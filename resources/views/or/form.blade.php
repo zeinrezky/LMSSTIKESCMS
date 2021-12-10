@@ -143,8 +143,15 @@
                         <a href="javascript:void(0)" onclick="openTab('kuis')" class="btn btn-default btn-sm">
                             Back
                         </a>
-                        <button type="submit" class="btn btn-primary btn-sm">
-                            {{ isset($or->id) ? 'Save' : 'Submit'}}
+
+                        @if(!isset($or->status) || $or->status >= 3)
+                            <button type="submit" name="save_draft" value="1" class="btn btn-success btn-sm">
+                                Save to Draft
+                            </button>
+                        @endif
+
+                        <button type="submit" value="0" class="btn btn-primary btn-sm">
+                            {{ (isset($or->id) && $or->status == 0) ? 'Save' : 'Submit'}}
                         </button>
                     </div>
                 @else
@@ -197,7 +204,7 @@
                                 @endif
 
                             @elseif($userStatus == 'approv')
-                                @if($or->status == 1)
+                                @if($or->status == 1 || $thisRole == 63)
                                     <div class="row">
                                         <div class="col">
                                             {!! Form::label("Approver Notes") !!}

@@ -59,6 +59,7 @@
                 </button>  
             </div>
         </div>
+        {!! alertMaxSize() !!}
     </div>
 </div>
 
