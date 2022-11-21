@@ -1,0 +1,83 @@
+// ----------------------------------------
+
+rps
+
+- id
+- text_box_id
+- strategi_pembelajaran
+- deskripsi_mata_kuliah
+- metode_penilaian (array)
+- media_pembelajaran
+- capaian_pembelajaran (array)
+- peta_kompetensi
+- rubrik_penilaian
+- status
+- reviewer_commen
+- reviewer_date
+- reviewer_user
+- approv_commen
+- approv_user
+- approv_date
+- create_user
+- created_at
+- updated_at
+
+// ----------------------------------------
+
+tambahin capaian_pembelajaran dan sesi
+di topic after sub_topic
+
+// ----------------------------------------
+
+metode_penilaian
+- id
+- component
+- weight
+
+// ----------------------------------------
+
+or
+duplicate dari tabel RPS dari status sampai akhir
+
+// ----------------------------------------
+
+or_file
+
+- id
+- id_pm
+- topic_id
+- type (or_ppt, or_ln , or_video)
+- title
+- link
+- file
+
+// ----------------------------------------
+
+alter Kuis,
+isi_soal dan pilihan dibuat longtext,
+varian_latihan dibuat integer
+
+// ----------------------------------------
+
+tabel reset_password
+sama remember_token di dosen
+
+// ----------------------------------------
+
+tambah field weight_praktikum di metode_penilaian
+
+// ----------------------------------------
+
+tambah field source di or_file
+
+// ----------------------------------------
+
+tabah field metode_penilaian_praktikum
+
+// ----------------------------------------
+
+Tambah field category (char) di tabel metode_penilaian
+
+// ----------------------------------------
+
+Tabel text_book Not null author, isbn, tahun
