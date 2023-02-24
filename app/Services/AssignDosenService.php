@@ -94,7 +94,7 @@ class AssignDosenService
             DB::rollback();
             dd($e->getMessage());
         }
-        sendEmail($pemberiMateri['id_pm'],'assign','assign',$request->sme_id);
+        //sendEmail($pemberiMateri['id_pm'],'assign','assign',$request->sme_id);
     }
 
     public function update(Request $request, int $id)

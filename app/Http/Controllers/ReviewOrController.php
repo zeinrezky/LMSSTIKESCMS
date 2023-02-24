@@ -121,7 +121,7 @@ class ReviewOrController extends Controller
     public function testEmail(Request $request)
     {
 
-        sendEmail(18,'text-book','input',40);
+        //sendEmail(18,'text-book','input',40);
 
         return 'email berhasil dikirim silahkan cek';
     }

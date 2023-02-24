@@ -182,7 +182,7 @@ class ReviewOrService
                 
                 $model->update($inputs);
                 
-                sendEmail($id,'or',$statusApp,$user->id_dosen);
+                //sendEmail($id,'or',$statusApp,$user->id_dosen);
                 
                 return true;
             // }

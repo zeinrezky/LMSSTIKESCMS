@@ -183,7 +183,7 @@ class RpsController extends Controller
     public function testEmail(Request $request)
     {
 
-        sendEmail(29,'text-book','input',49);
+        //sendEmail(29,'text-book','input',49);
 
         return 'email berhasil dikirim silahkan cek';
     }

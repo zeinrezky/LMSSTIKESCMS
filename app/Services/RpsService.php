@@ -179,10 +179,10 @@ class RpsService
                 }
 
                 if ($sendRevisionNotif && $save_draft == 0) {
-                    sendEmail($id,'rps','revision',$user->id_dosen);
+                    //sendEmail($id,'rps','revision',$user->id_dosen);
                 }elseif ($data->status == 0 && $save_draft == 0) {
                     // send email create
-                    sendEmail($id,'rps','input',$user->id_dosen);
+                    //sendEmail($id,'rps','input',$user->id_dosen);
                 }
                 return true;
         }else{
@@ -255,7 +255,7 @@ class RpsService
 
             if ($save_draft == 0) {
                 // send email
-                sendEmail($id,'rps','input',$user->id_dosen);
+                //sendEmail($id,'rps','input',$user->id_dosen);
             }
 
             return true;

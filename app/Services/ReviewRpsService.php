@@ -175,6 +175,6 @@ class ReviewRpsService
         }
 
         $model->update($inputs);
-        sendEmail($id,'rps',$statusApp,$user->id_dosen);
+        //sendEmail($id,'rps',$statusApp,$user->id_dosen);
     }
 }

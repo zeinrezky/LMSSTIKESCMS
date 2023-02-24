@@ -139,12 +139,12 @@ class InputTextBookService
         
             if ($model['status'] == 3) {
                 // send email revision
-                sendEmail($id,'text-book','revision',$user->id_dosen);
+                //sendEmail($id,'text-book','revision',$user->id_dosen);
             }
 
             if ($save_draft == 0 && $model['status'] == 4) {
                 // send email create
-                sendEmail($id,'text-book','input',$user->id_dosen);
+                //sendEmail($id,'text-book','input',$user->id_dosen);
             }
 
             $model->update($inputs);
@@ -153,7 +153,7 @@ class InputTextBookService
             $model->create($inputs);
             if ($save_draft == 0) {
                 // send email create
-                sendEmail($id,'text-book','input',$user->id_dosen);
+                //sendEmail($id,'text-book','input',$user->id_dosen);
             }
         }
     }

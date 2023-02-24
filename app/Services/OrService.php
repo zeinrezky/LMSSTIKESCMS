@@ -337,9 +337,9 @@ class OrService
                 $check->save();
                 
                 if ($sendRevisionNotif && $save_draft == 0) {
-                    sendEmail($id,'or','revision',$user->id_dosen);
+                    //sendEmail($id,'or','revision',$user->id_dosen);
                 }elseif ($check->status == 0 && $save_draft == 0) {
-                    sendEmail($id,'or','input',$user->id_dosen);
+                    //sendEmail($id,'or','input',$user->id_dosen);
                 }
 
                 return true;
@@ -475,7 +475,7 @@ class OrService
             // send email
             $user = Auth::user();
             if ($save_draft == 0) {
-                sendEmail($id,'or','input',$user->id_dosen);
+                //sendEmail($id,'or','input',$user->id_dosen);
             }
 
             return true;
